@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday [Brother's Name]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Nathanael Norris's Birthday Celebration!</h1>
+    <input type="password" id="password" placeholder="Enter Password">
+    <button onclick="checkPassword()">Submit</button>
+    <div id="content" class="hidden">
+        <h2>Happy Birthday!</h2>
+        <h3>Memories Together:</h3>
+        <p>Write about your favorite memories with him here.</p>
+        <h3>Favorite Songs:</h3>
+        <ul>
+            <li><a href="https://open.spotify.com/intl-fr/track/62jTONp5YKMM1XSNbz9cF3?si=698639b5c06b42ee">Favorite Song 1</a></li>
+            <li><a href="https://open.spotify.com/intl-fr/track/32OqiYbgAGZXnupfEUJPh5?si=4925549a8a334240">Favorite Song 2</a></li>
+        </ul>
+        <h3>Gallery:</h3>
+        <img src="https://www.instagram.com/p/C2vslfGAQ1d/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" alt="Memory 1" width="300">
+        <img src="https://www.instagram.com/p/C2rg2nKOG22/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" alt="Memory 2" width="300">
+    </div>
+    <script>
+        function checkPassword() {
+            const passwordInput = document.getElementById('password').value;
+            const correctPassword = 'XAVIER'; // Change this to your chosen password
+            if (passwordInput === correctPassword) {
+                document.getElementById('content').classList.remove('hidden');
+            } else {
+                alert('Incorrect password!');
+            }
+        }
+    </script>
+</body>
+</html>
